@@ -1,0 +1,276 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css"
+    integrity="sha384-ZRL2Tb6AhrXsTPysXBA3J4j91sANHgXED1iePEofeyfcGJjgN6BmxY4pUY1mG8g9"
+    crossorigin="anonymous"
+    >
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
+    <title>ABOUT ME</title>
+</head>
+<style>
+    .card {
+            background-color: #133556; 
+            color: #fff; 
+            border: none; 
+        }
+    .navbar{
+        background-color:  #133556;
+        color : #fff;
+        
+    }
+    
+</style>
+<body>
+    <nav class="navbar navbar-expand-sm text-light navbar-light">
+        <div class="container">
+            <a href="#" class="navbar-brand text-light">ABOUT ME</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link text-light">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link text-light">EXPERIENCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link text-light">CONTACTs</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Add a button for downloading Transcripts -->
+            <nav class="navbar navbar-light   ms-auto">
+                <form class="container-fluid justify-content-start">
+                    <a class="btn btn-outline-light text-light" href="#!" role="button">Transcripts</a>
+                </form>
+
+            </nav>
+        </div>
+    </nav>
+    
+    <section class="bg-dark text-light p-5 text-center">        
+        <div class="container text-light">
+            <div>
+                <div id="profile-pic">
+                    <img id="profile-pic" src="{% static 'images/IMG_1936.jpeg' %}" style="width: 300px; height: 300px; border-radius: 50%;">
+                </div>
+                <h1>Hi, I am Ayush Neupane.</h1>
+                
+                <p class="lead mb-3">I am currently a sophomore pursuing a Bachelors of Science degree in Computer Science at SUNY Plattsburgh. I love working on side projects as a Web Developer. Also, I am working on a bunch of other academic projects using various programming languages. I am seeking opportunities in the field of software development and computer science, eager to work together to help teams achieve company goals.</p>
+               
+                <a class="btn btn-outline-info btn-lg" href="{% static 'resume/resume.pdf' %}" target="_blank">Download my Resume</a>
+                </div>
+            
+            </div>
+        </div>
+        <br>
+        <br>
+    </section>
+    <section class="bg-dark p-5  text-light" id="projects">
+        <div class="container text-center">
+            <h2>
+                Academic/Side Projects
+            </h2>
+            <br>
+            <br>
+            <div>
+                <div class="row text-center g-5" >
+                    <div class="col-md ";>
+                        <div class="card  text-light mb-3 h-100" style=" border-radius: 20%;">
+                            <img  src="{% static 'images/tictactoe.jpg' %}" style="width: 250px; height: 250px; border-radius: 50%; display: block; margin: 0 auto;">
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-light mb-3">
+                                    Tic-Tac-Toe
+                                </h4>
+                                <p>C++</p>
+                                <a href="https://github.com/ANEUP002/Tic-Tac-Toe" target="_blank" class="btn btn-light">Github</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md ">
+                        <div class="card  text-light mb-3 h-100" style="border-radius: 20%;">
+                            <img  src="{% static 'images/portfolio.jpeg' %}" style="width: 250px; height: 250px; border-radius: 50%; display: block; margin: 0 auto;">
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-light mb-3">
+                                    Portfolio Website
+                                </h4>
+                                <p>Django, Bootstrap</p>
+                                <a href="https://github.com/ANEUP002/Portfolio" target="_blank" class="btn btn-light">Github</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md ">
+                        <div class="card  text-light mb-3 h-100" style="border-radius: 20%;">
+                            <img  src="{% static 'images/analysis.jpeg' %}" style="width: 250px; height: 250px; border-radius: 50%; display: block; margin: 0 auto;">
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-light mb-3">
+                                    Text-file-Analysis
+                                </h4>
+                                <p>C++</p>
+                                <a href="https://github.com/ANEUP002/Text-File-Analysis-Too" target="_blank" class="btn btn-light">Github</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div>
+                <div class="row text-center g-5">
+                    <div class="col-md ">
+                        <div class="card  text-light mb-3 h-100" style="border-radius: 20%;">
+                            <img  src="{% static 'images/stock.jpeg' %}" style="width: 250px; height: 250px; border-radius: 50%; display: block; margin: 0 auto;">
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-light mb-3">
+                                    Stock Management System(ONGOING)
+                                </h4>
+                                <p>C++</p>
+                                <a href="https://github.com/ANEUP002/Stock-management-" target="_blank" class="btn btn-light">Github</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md ">
+                        <div class="card  text-light mb-3 h-100" style="border-radius: 20%;">
+                            <img  src="{% static 'images/data.jpeg' %}" style="width: 250px; height: 250px; border-radius: 50%; display: block; margin: 0 auto;">
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-light mb-3">
+                                    Data-handling
+                                </h4>
+                                <p>Python</p>
+                                <a href="https://github.com/ANEUP002/Data-Handling-in-Python" target="_blank" class="btn btn-light">Github</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md ">
+                        <div class="card  text-light mb-3 h-100" style="border-radius: 20%;">
+                            <img  src="{% static 'images/calc.jpeg' %}" style="width: 250px; height: 250px; border-radius: 50%; display: block; margin: 0 auto;">
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-light mb-3">
+                                Simple Calculator Program
+                                </h4>
+                                <p>Python</p>
+                                <a href="https://github.com/ANEUP002/Calculator" target="_blank" class="btn btn-light">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="text-light text-center">
+        <div class="container"></div>
+    </section>
+    <section class="bg-dark p-5 text-light text-center" id="experience">
+        <div class="container text-center">
+            <div>
+                <h2>
+                    Experience and Skills
+                </h2>
+                <br>
+                <p>
+                    What I know
+                </p>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card  text-lightmb-3 h-100" style="border-radius: 20%;">
+                            <br>
+                            <h4>Languages</h4>
+                            <div class="card-body text-center text-light">
+                                <p>Python</p>
+                                <p>JavaScript</p>
+                                <p>C++</p>
+                                <p>C programming</p>
+                                <p>MySQL</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md">
+                        <div class="card  text-light mb-3 h-100" style="border-radius: 20%;">
+                            <br>
+                            <h4>Skills</h4>
+                            <div class="card-body text-center text-light">
+                                <p>Django-Python Framework</p>
+                                <p>React-JavaScript(Learning)</p>
+                                <p>Bootstrap</p>
+                                <p>Github</p>
+                                <p>Visual Studio Code</p>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md">
+                        <div class="card  text-light mb-3 h-100" style="border-radius: 20%;">
+                            <br>
+                            <h3 class="text-light">Work Experience</h3>
+                            <div class="card-body text-center text-light">
+                                <h5>Resident Assistant for SUNY Plattsburgh</h5>
+                                <p>August 2023 - Present</p>
+                                <h5>Student Senator at SUNY PLattsburgh</h5>
+                                <p>May 2023 - Present</p>
+                                <h5>IT intern at Accountability Lab Nepal</h5>
+                                <p>June 2020 - June 2021</p>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+   
+    <section class=" p-2 text-center" id="contact">
+        <div class="container-fluid">
+            <div>
+                <h5>Let's Connect</h5>
+            </div>
+            <div>
+                <a class="btn btn-primary" href="https://www.facebook.com/ayush.neupane.583" role="button" style="background-color: white; border: none; ">
+                    <img src="{% static 'images/facebook.png' %}" style="width: 30px; height: 30px;">
+                </a>
+                <a class="btn btn-primary" href="https://www.linkedin.com/in/ayush-neupane-b26127203/" role="button" style="background-color: white; border: none; ">
+                    <img src="{% static 'images/linkedin.png' %}" style="width: 33px; height: 33px;">
+                </a>
+                <a class="btn btn-primary" href="mailto:ayush.neupane.583@gmail.com" role="button" style="background-color: white; border: none; ">
+                    <img src="{% static 'images/gmail.png' %}" style="width: 30px; height: 30px;">
+                </a>
+                <a class="btn btn-primary" href="https://github.com/ANEUP002" role="button" style="background-color: white; border: none; ">
+                    <img src="{% static 'images/github.png' %}" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
